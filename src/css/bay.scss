@@ -1,0 +1,135 @@
+@import 'variables';
+#bay {
+  width: 100%;
+  background-color: $primary-color;
+  min-height: 80vh;
+  display: flex;
+  .row {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    .bay-image {
+      flex: 1;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .bay-text {
+      background-image: url('../images/02.svg');
+      background-repeat: no-repeat;
+      background-size: 20% 20%;
+      background-position: 25vw 30%;
+      margin-top: 50px;
+      text-align: right;
+      flex: 1;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+
+      h1 {
+        margin-right: 15vw;
+        margin-left: 15%;
+        color: #3b3e55;
+        font-family: 'cinzelregular';
+        text-transform: uppercase;
+        font-size: 40px;
+        @include for-phone-and-tiny-phone {
+          margin-right: 5vw;
+        }
+        @include for-tablet-portrait-only {
+          margin-right: 10vw;
+        }
+      }
+      h4 {
+        margin-right: 15vw;
+        margin-left: 15%;
+        color: #c7bfaa;
+        font-family: 'cinzelbold';
+        font-size: 14px;
+
+        text-transform: uppercase;
+        @include for-phone-and-tiny-phone {
+          margin-right: 5vw;
+        }
+        @include for-tablet-portrait-only {
+          margin-right: 10vw;
+        }
+      }
+      button {
+        margin-right: 15vw;
+        background: #ffffff;
+        border: 1px #4f4f50 solid;
+        font-family: 'cinzelbold';
+        text-transform: lowercase;
+        width: 30%;
+        height: 50px;
+        font-size: 14;
+        cursor: pointer;
+        @include for-phone-and-tiny-phone {
+          margin-right: 5vw;
+        }
+        @include for-tablet-portrait-only {
+          margin-right: 10vw;
+        }
+      }
+      p {
+        margin-right: 15vw;
+        margin-left: 15%;
+        color: #999aa3;
+        font-family: 'open_sansregular';
+        font-size: 15px;
+        @include for-phone-and-tiny-phone {
+          margin-right: 5vw;
+        }
+        @include for-tablet-portrait-only {
+          margin-right: 10vw;
+        }
+      }
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content/Box */
+      .modal-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%; /* Could be more or less, depending on screen size */
+        p {
+          margin: 0%;
+
+          margin-bottom: 5%;
+        }
+        button {
+          margin: 0%;
+          width: 50%;
+          cursor: pointer;
+          background: #a39369;
+          color: $primary-color;
+
+          font-family: 'cinzelbold';
+          font-size: 15px;
+        }
+      }
+
+      /* The Close Button */
+    }
+  }
+}

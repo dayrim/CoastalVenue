@@ -1,0 +1,101 @@
+@import 'variables';
+#home {
+  position: relative;
+  .home-line {
+    @include position-absolute-center;
+    top: 93%;
+    z-index: 5;
+    width: 1px;
+    height: 90px;
+  }
+  .swiper-container {
+    .swiper-slide {
+      background-color: #000000;
+      z-index: 0;
+      .slider-image {
+        opacity: 0.5;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+      position: relative;
+    }
+    .home-logo {
+      @include position-absolute-center;
+      width: 194px;
+      height: 123px;
+      top: 5%;
+      z-index: 2;
+    }
+
+    .home-text {
+      white-space: nowrap;
+      width: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-color;
+      font-family: 'cinzelregular';
+      font-size: 185px;
+      z-index: 2;
+      @include for-tablet-portrait-only {
+        font-size: 140px;
+      }
+      @include for-phone-only {
+        font-size: 60px;
+      }
+      @include for-tiny-phone-only {
+        font-size: 40px;
+      }
+    }
+    .home-scroll {
+      @include position-absolute-center;
+      text-transform: uppercase;
+      color: $primary-color;
+      font-family: 'cinzelregular';
+      font-size: 14px;
+      top: 80%;
+      z-index: 2;
+    }
+    .home-mouse {
+      @include position-absolute-center;
+      top: 85%;
+      z-index: 2;
+      width: 24px;
+      height: 42px;
+    }
+    .swiper-pagination-bullet {
+      margin: 0;
+      z-index: 1;
+      opacity: 1;
+      width: 28px;
+      height: 28px;
+      background: url('../images/Oval.svg');
+      background-size: 8px 8px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .swiper-pagination {
+      margin: 0;
+      padding-top: 20%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-pagination-bullet-active {
+      background: url('../images/OvalSelected.svg');
+      background-size: 28px 28px;
+    }
+  }
+}

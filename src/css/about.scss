@@ -1,0 +1,99 @@
+@import 'variables';
+#about {
+  width: 100%;
+  background-color: $primary-color;
+  min-height: 100vh;
+  overflow: hidden;
+  .swiper-container {
+    @include default-margins;
+    .swiper-wrapper {
+      margin: 0;
+      height: 75%;
+      padding: 0;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0;
+      opacity: 1;
+      width: 28px;
+      height: 28px;
+      background: url('../images/OvalBlack.svg');
+      background-size: 8px 8px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .swiper-pagination-bullet-active {
+      margin: 0;
+      z-index: 3;
+      background-size: 28px 28px;
+      background: url('../images/OvalBlackSelected.svg');
+    }
+    .swiper-pagination {
+      margin-top: 2.5%;
+      position: static;
+      margin-bottom: 5%;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide {
+      overflow: hidden;
+      z-index: 0;
+      .slide-image {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+  .row {
+    margin-bottom: 15px;
+    @include default-margins;
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/About.svg') no-repeat center center;
+    background-size: 50% 50%;
+    .content {
+      overflow: hidden;
+      margin-top: 50px;
+      text-align: center;
+      flex-basis: 75%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      position: relative;
+      h1 {
+        color: #3b3e55;
+        font-family: 'cinzelregular';
+        text-transform: uppercase;
+        font-size: 40px;
+      }
+      h4 {
+        color: #c7bfaa;
+        font-family: 'cinzelbold';
+        font-size: 14px;
+        position: absolute;
+        left: -30%;
+        top: -10%;
+        bottom: 0%;
+        right: 0%;
+        text-transform: uppercase;
+      }
+      p {
+        @include default-margins;
+        color: #999aa3;
+        font-family: 'open_sansregular';
+        font-size: 15px;
+      }
+    }
+  }
+}
