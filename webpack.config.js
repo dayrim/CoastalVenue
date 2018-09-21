@@ -92,34 +92,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jps|svg|gif)$/,
+        test: /\.(png|jpg|svg|gif)$/,
 
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '/images/[name].[ext]'
-            }
-          },
-
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              disable: true,
-              mozjpeg: {
-                progressive: true,
-                quality: 65
-              },
-              optipng: {
-                enabled: false
-              },
-              pngquant: {
-                quality: '30',
-                speed: 4
-              },
-              gifsicle: {
-                interlaced: false
-              }
             }
           }
         ]

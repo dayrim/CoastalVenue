@@ -1,15 +1,5 @@
 @import 'variables';
 
-// #home {
-//   @include parallax-background('../images/alvin-mahmudov-1.png');
-//   h1 {
-//     transform: translateZ(-2px);
-//     text-align: center;
-//   }
-// }
-main {
-  //background-color: $secondary-color;
-}
 
 html {
   position: relative;
@@ -28,16 +18,3 @@ html {
     padding: 0px;
   }
 }
-
-
-
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
