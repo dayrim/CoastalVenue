@@ -114,14 +114,11 @@ module.exports = {
                 enabled: false
               },
               pngquant: {
-                quality: '65-90',
+                quality: '30',
                 speed: 4
               },
               gifsicle: {
                 interlaced: false
-              },
-              webp: {
-                quality: 75
               }
             }
           }
