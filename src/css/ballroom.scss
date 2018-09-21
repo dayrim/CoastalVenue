@@ -5,14 +5,16 @@
   background-color: $primary-color;
   min-height: 80vh;
   display: flex;
+
   .row {
     overflow: hidden;
     width: 100%;
     display: flex;
+
     .ballroom-image {
       flex: 1;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: 50% 50%;
       background-size: cover;
     }
     .ballroom-text {
@@ -27,6 +29,14 @@
       flex-direction: column;
       justify-content: center;
       display: flex;
+      @include for-phone-and-tiny-phone {
+        background-position: 4vw -15%;
+        background-size: 50% 50%;
+      }
+      @include for-tablet-portrait-only {
+        background-position: 10vw 0%;
+        background-size: 50% 50%;
+      }
       button {
         margin-left: 15vw;
         background: #ffffff;
@@ -36,12 +46,15 @@
         width: 30%;
         height: 50px;
         font-size: 14;
+        margin-bottom: 5%;
         cursor: pointer;
         @include for-phone-and-tiny-phone {
-          margin-left: 5vw;
+          margin-left: 4vw;
+          width: 60%;
         }
         @include for-tablet-portrait-only {
           margin-left: 10vw;
+          width: 50%;
         }
       }
       h1 {
@@ -52,7 +65,8 @@
         text-transform: uppercase;
         font-size: 40px;
         @include for-phone-and-tiny-phone {
-          margin-left: 5vw;
+          margin-left: 4vw;
+          font-size: 28px;
         }
         @include for-tablet-portrait-only {
           margin-left: 10vw;

@@ -59,10 +59,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/About.svg') no-repeat center center;
+    background-image: url('../images/About.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: 50% 50%;
+
     .content {
-      overflow: hidden;
       margin-top: 50px;
       text-align: center;
       flex-basis: 75%;

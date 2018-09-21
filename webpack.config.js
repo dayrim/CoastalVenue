@@ -31,15 +31,15 @@ module.exports = {
         cache: true,
         parallel: true,
         sourceMap: true
-      })
-      // new OptimizeCSSAssetsPlugin({})
+      }),
+      new OptimizeCSSAssetsPlugin({})
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       inject: false,
-      template: './src/template.html'
+      template: './src/html/main.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'css/style.css'
@@ -86,7 +86,7 @@ module.exports = {
             loader: 'html-loader',
             options: {
               interpolate: true
-              // minimize: true
+              //minimize: true
             }
           }
         ]
@@ -105,12 +105,11 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              disable: true,
+              disable: false,
               mozjpeg: {
                 progressive: true,
                 quality: 65
               },
-              // optipng.enabled: false will disable optipng
               optipng: {
                 enabled: false
               },
@@ -121,7 +120,6 @@ module.exports = {
               gifsicle: {
                 interlaced: false
               },
-              // the webp option will enable WEBP
               webp: {
                 quality: 75
               }

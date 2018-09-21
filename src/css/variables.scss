@@ -55,10 +55,11 @@ $tertiary-color: #4f4f50;
 @mixin default-margins {
   margin-left: 15%;
   margin-right: 15%;
-  @include for-phone-only {
+  @include for-phone-and-tiny-phone {
     margin-left: 0%;
     margin-right: 0%;
   }
+
   @include for-tablet-portrait-only {
     margin-left: 5%;
     margin-right: 5%;

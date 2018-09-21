@@ -33,6 +33,15 @@
     width: 30%;
     height: 55px;
     display: flex;
+    @include for-tablet-portrait-only {
+      width: 50%;
+    }
+    @include for-phone-only {
+      width: 60%;
+    }
+    @include for-tiny-phone-only {
+      width: 70%;
+    }
     input {
       width: 75%;
       padding: 0;
@@ -41,6 +50,9 @@
       font-family: 'cinzelbold';
       font-size: 11px;
       color: $tertiary-color;
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
     button {
       cursor: pointer;
@@ -52,6 +64,9 @@
       border: 0;
       font-family: 'cinzelbold';
       font-size: 15px;
+      @include for-phone-and-tiny-phone-and-tablet-portrait {
+        font-size: 12px;
+      }
     }
   }
   .icons {
