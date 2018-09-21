@@ -16,6 +16,7 @@ Project uses webpack to build source files from src folder into public directory
 Folder structure:
 
 ├───node_modules
+
 ├───public 
 │   ├───css
 │   ├───images
