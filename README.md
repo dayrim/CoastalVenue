@@ -4,7 +4,7 @@ Most beautiful wedding venue in the world. Vist https://dayrim.com/coastalvenue/
 ## How to build and host the project locally
 
 - Install npm and node https://nodejs.org/en/.
-- Download project or run `git clone https://github.com/dayrim/erply-webshop.git` to clone project.
+- Download project or run `git clone https://github.com/dayrim/coastalvenue.git` to clone project.
 - Go to project root.
 - Run `npm install` to download all flagged dependencies and build the project. All build artifacts will be stored in the `public/` directory.
 - Run `npm start` to start development server.
