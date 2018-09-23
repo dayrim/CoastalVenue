@@ -17,7 +17,6 @@ import 'photoswipe/dist/photoswipe.css';
 import 'photoswipe/dist/default-skin/default-skin.css';
 
 import SmoothScroll from 'smooth-scroll';
-import AOS from 'aos';
 import throttle from 'lodash/throttle';
 import './swiperInit.js';
 import './photoswiperInit.js';
@@ -67,10 +66,5 @@ window.addEventListener('DOMContentLoaded', function() {
     if (event.target == modal) {
       modal.style.display = 'none';
     }
-  });
-
-  AOS.init({
-    duration: 1000,
-    disable: 'phone'
   });
 });
