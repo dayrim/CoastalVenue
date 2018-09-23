@@ -4,7 +4,6 @@
   background-color: $secondary-color;
   min-height: 100vh;
   padding-top: 15px;
-  overflow: hidden;
 
   .swiper-container {
     .swiper-wrapper {
@@ -39,7 +38,6 @@
       align-items: center;
     }
     .swiper-slide {
-      overflow: hidden;
       transition: opacity 0.5s ease-out;
       background-color: #000000;
       z-index: 0;

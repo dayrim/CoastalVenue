@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', function() {
   const promotionSwiper = new Swiper('.promotions-swiper', {
     loop: true,
     spaceBetween: 15,
-
     slidesPerView: 5,
     pagination: {
       el: '.swiper-pagination',
@@ -24,12 +23,11 @@ window.addEventListener('DOMContentLoaded', function() {
         return '<div class="' + className + '"></div>';
       }
     },
-    allowTouchMove: false,
+    allowTouchMove: true,
     breakpoints: {
       320: {
         slidesPerView: 1,
         allowTouchMove: true,
-
         spaceBetween: 0,
         initialSlide: 2
       },

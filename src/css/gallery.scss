@@ -3,7 +3,6 @@
   width: 100%;
   background-color: $primary-color;
   min-height: 100vh;
-  overflow: hidden;
   .swiper-container {
     .swiper-wrapper {
       margin: 0;
@@ -102,7 +101,6 @@
     }
   }
   .row {
-    overflow: hidden;
     margin-bottom: 15px;
     @include default-margins;
     min-height: 35vh;

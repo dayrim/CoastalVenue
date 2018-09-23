@@ -3,7 +3,6 @@
   width: 100%;
   background-color: $primary-color;
   min-height: 100vh;
-  overflow: hidden;
   .swiper-container {
     @include default-margins;
     .swiper-wrapper {
@@ -39,7 +38,6 @@
     }
 
     .swiper-slide {
-      overflow: hidden;
       z-index: 0;
       .slide-image {
         width: inherit;
