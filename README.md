@@ -13,7 +13,6 @@ Most beautiful wedding venue in the world. Vist https://dayrim.com/coastalvenue/
 ## About build process
 
 Project uses webpack to build source files from src folder into public directory.
-Folder structure:
 
 ## Requirments
 
