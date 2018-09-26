@@ -164,6 +164,7 @@ window.addEventListener('DOMContentLoaded', function() {
   });
   const gallerySwiper = new Swiper('.gallery-swiper', {
     loop: false,
+    spaceBetween: 0,
     slidesPerView: 1,
     pagination: {
       el: '.swiper-pagination',

@@ -2,7 +2,7 @@
 #header-nav-wrap {
   z-index: 10;
   background-color: $tertiary-color;
-  top: -500;
+  top: -500px;
   position: fixed;
   transition: top 0.7s ease-in-out, opacity 1s ease-in-out;
   width: 100%;

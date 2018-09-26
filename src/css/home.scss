@@ -1,6 +1,7 @@
 @import 'variables';
 #home {
   position: relative;
+  min-height: 100vh;
   .home-line {
     @include position-absolute-center;
     top: 93%;
@@ -13,6 +14,7 @@
     }
   }
   .swiper-container {
+    height: 100vh;
     .swiper-slide {
       background-color: #000000;
       z-index: 0;

@@ -4,13 +4,13 @@
   background-color: $primary-color;
   min-height: 100vh;
   .swiper-container {
+    height: 100vh;
     @include default-margins;
     .swiper-wrapper {
       margin: 0;
-      height: 75%;
+      height: 80%;
       padding: 0;
     }
-
     .swiper-pagination-bullet {
       margin: 0;
       opacity: 1;
@@ -28,11 +28,10 @@
       background: url('../images/OvalBlackSelected.svg');
     }
     .swiper-pagination {
-      margin-top: 2.5%;
-      position: static;
-      margin-bottom: 5%;
+      height: 20%;
+      bottom: 3%;
+      position: relative;
       display: flex;
-
       justify-content: center;
       align-items: center;
     }

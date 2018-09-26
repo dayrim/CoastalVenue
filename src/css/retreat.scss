@@ -6,8 +6,9 @@
   padding-top: 15px;
 
   .swiper-container {
+    height: 80vh;
     .swiper-wrapper {
-      height: 55%;
+      height: 80%;
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -29,11 +30,10 @@
       background: url('../images/OvalBlackSelected.svg');
     }
     .swiper-pagination {
-      margin-top: 2.5%;
-      position: static;
-      margin-bottom: 5%;
+      height: 20%;
+      position: relative;
+      bottom: 3%;
       display: flex;
-
       justify-content: center;
       align-items: center;
     }

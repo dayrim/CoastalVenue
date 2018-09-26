@@ -5,13 +5,13 @@
   min-height: 100vh;
   padding-top: 15px;
   .swiper-container {
+    height: 80vh;
     .swiper-wrapper {
-      height: 55%;
+      height: 80%;
       list-style-type: none;
       margin: 0;
       padding: 0;
     }
-
     .swiper-pagination-bullet {
       margin: 0;
       opacity: 1;
@@ -29,12 +29,12 @@
       background: url('../images/OvalBlackSelected.svg');
     }
     .swiper-pagination {
-      margin-top: 2.5%;
-      position: static;
-      margin-bottom: 5%;
+      height: 20%;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
+      bottom: 3%;
     }
 
     .swiper-slide {
