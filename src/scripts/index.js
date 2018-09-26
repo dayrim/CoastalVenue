@@ -12,7 +12,6 @@ import '../css/retreat.scss';
 import '../css/variables.scss';
 
 import 'swiper/dist/css/swiper.css';
-import 'aos/dist/aos.css';
 import 'photoswipe/dist/photoswipe.css';
 import 'photoswipe/dist/default-skin/default-skin.css';
 
