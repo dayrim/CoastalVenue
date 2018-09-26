@@ -32,7 +32,7 @@ window.addEventListener(
         document.getElementById('header-nav-wrap').style.opacity = '0';
       }
     },
-    500,
+    300,
     { leading: true, trailing: true }
   )
 );
