@@ -9,6 +9,7 @@ app.use(express.static(__dirname + '/public/'));
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/public/index.html'));
 });
+
 request('http://localhost:8084/', function(error, response, body) {
   w3c.validate(body, function(err) {
     console.error(err);
